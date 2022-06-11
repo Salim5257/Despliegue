@@ -1,0 +1,304 @@
+
+<!-- Le doy forma de tabla al excel -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <table>
+        <tr>
+            <th style="background-color: blue; color: white;">Id</th>
+            <th style="background-color: blue; color: white;">Marca</th>
+            <th style="background-color: blue; color: white;">Imagen</th>
+            <th style="background-color: blue; color: white;">Nombre</th>
+            <th style="background-color: blue; color: white;">Descripción</th>
+            <th style="background-color: blue; color: white;">Precio</th>
+        </tr>
+        <tbody> 
+                            <tr>
+                    <td>22</td>
+                    <td>adidas</td>
+                    <td>adidas1.png</td>
+                    <td>4D Fusio</td>
+                    <td>Parte superior textil. Suela de goma. Color del artículo: Legacy Indigo / Turbo / Sky Rush</td>
+                    <td>159.95</td>
+                </tr>
+                            <tr>
+                    <td>24</td>
+                    <td>adidas</td>
+                    <td>adidas3.png</td>
+                    <td>Ultraboost 22</td>
+                    <td>Horma clásica. Ajuste suave en el talón. Color del artículo: Flash Orange / Core Black / Cloud White</td>
+                    <td>189.95</td>
+                </tr>
+                            <tr>
+                    <td>25</td>
+                    <td>adidas</td>
+                    <td>adidas4.png</td>
+                    <td>Advantage</td>
+                    <td>Forro textil. Tacto suave. Color del artículo: Cloud White / Cloud White / Green</td>
+                    <td>69.95</td>
+                </tr>
+                            <tr>
+                    <td>26</td>
+                    <td>adidas</td>
+                    <td>adidas5.png</td>
+                    <td>Racer TR21</td>
+                    <td>Parte superior textil. Mediasuela Cloudfoam. Color del artículo: Cloud White / Grey Two / Solar Red</td>
+                    <td>27.95</td>
+                </tr>
+                            <tr>
+                    <td>27</td>
+                    <td>nike</td>
+                    <td>nike1.png</td>
+                    <td>Zoom X Vaporfly </td>
+                    <td>Cápsula de espuma interna en el talón para ofrecer amortiguación adicional. Puntera más ancha para ofrecer un ajuste más holgado</td>
+                    <td>249.95</td>
+                </tr>
+                            <tr>
+                    <td>29</td>
+                    <td>nike</td>
+                    <td>nike3.png</td>
+                    <td>Air Force 1</td>
+                    <td>Perfil bajo para un look impecable y estilizado. Zona del tobillo acolchada, suave y cómoda</td>
+                    <td>109.95</td>
+                </tr>
+                            <tr>
+                    <td>30</td>
+                    <td>nike</td>
+                    <td>nike4.png</td>
+                    <td>Air Max Bolt</td>
+                    <td>Zona del tobillo acolchada y de perfil bajo para ofrecer un look elegante y cómodo. El material sintético y el tejido proporcionan una durabilidad ligera para el día a día</td>
+                    <td>99.95</td>
+                </tr>
+                            <tr>
+                    <td>31</td>
+                    <td>nike</td>
+                    <td>nike5.png</td>
+                    <td>Air Max 270</td>
+                    <td>Unidad Max Air 270 para proporcionar una comodidad sin igual durante todo el día. Funda interior elástica y confección de botín para crear un ajuste personalizable</td>
+                    <td>149.95</td>
+                </tr>
+                            <tr>
+                    <td>33</td>
+                    <td>puma</td>
+                    <td>puma2.png</td>
+                    <td>CA Pro Classic</td>
+                    <td>Empeine de piel. Formstrip PUMA en los laterales. Cierre con cordones para un ajuste ceñido</td>
+                    <td>89.95</td>
+                </tr>
+                            <tr>
+                    <td>34</td>
+                    <td>puma</td>
+                    <td>puma3.png</td>
+                    <td>Mirage Sport Tech</td>
+                    <td>MEVA: material de PUMA para una sensación cómoda y ligera. Exterior de malla técnica con capas de piel sintética y termoselladas superpuestas</td>
+                    <td>99.95</td>
+                </tr>
+                            <tr>
+                    <td>35</td>
+                    <td>puma</td>
+                    <td>puma4.png</td>
+                    <td>Graviton</td>
+                    <td>Caña baja. Talón con un refuerzo inspirado en un estilo modular que evoca el 2021. Formstrip PUMA en el lateral</td>
+                    <td>66.95</td>
+                </tr>
+                            <tr>
+                    <td>36</td>
+                    <td>puma</td>
+                    <td>puma5.png</td>
+                    <td>Wild Embroidered</td>
+                    <td>Exterior de nailon mate con capas de ante superpuestas en la puntera, el talón y los ojales. Refuerzo del talón de nobuk Soho y presilla para los cordones en la lengüeta</td>
+                    <td>79.95</td>
+                </tr>
+                            <tr>
+                    <td>38</td>
+                    <td>jordan</td>
+                    <td>jordan2.png</td>
+                    <td>Jordan One Take 3</td>
+                    <td>Suela exterior de goma dividida en dos secciones (frontal y trasera) para reducir el peso total de las zapatillas y permitir transiciones suaves. Contratacón externo</td>
+                    <td>99.95</td>
+                </tr>
+                            <tr>
+                    <td>39</td>
+                    <td>jordan</td>
+                    <td>jordan3.png</td>
+                    <td>Air Jordan 1 Mid SE</td>
+                    <td>Piel texturizada para ofrecer durabilidad y sujeción, así como un estilo premium, fuera de la cancha. Confección cupsole para añadir estabilidad y durabilidad</td>
+                    <td>129.95</td>
+                </tr>
+                            <tr>
+                    <td>40</td>
+                    <td>jordan</td>
+                    <td>jordan4.png</td>
+                    <td>Jordan 6 Rings</td>
+                    <td>Unidades Zoom Air en el talón y el antepié para ofrecer una amortiguación ligera y reactiva. Suela exterior de goma para proporcionar durabilidad y tracción</td>
+                    <td>169.95</td>
+                </tr>
+                            <tr>
+                    <td>41</td>
+                    <td>jordan</td>
+                    <td>jordan5.png</td>
+                    <td>Air Jordan 1 Retro</td>
+                    <td>Logotipo Wings en el lateral. Etiqueta Nike Air en la lengüeta. Perforaciones en la puntera. Esta versión de las Retro High OG se presenta con piel premium</td>
+                    <td>179.95</td>
+                </tr>
+                            <tr>
+                    <td>42</td>
+                    <td>reebok</td>
+                    <td>reebok1.png</td>
+                    <td>Royal Glide</td>
+                    <td>Tejido exterior de material sintético. Cierre de cordones. Suela de caucho de alta resistencia al desgaste</td>
+                    <td>59.95</td>
+                </tr>
+                            <tr>
+                    <td>43</td>
+                    <td>reebok</td>
+                    <td>reebok2.png</td>
+                    <td>Gl1000</td>
+                    <td>Ajuste clásico. Mediasuela FuelFoam. Plantilla espuma Memory Foam para ajuste perfecto</td>
+                    <td>54.95</td>
+                </tr>
+                            <tr>
+                    <td>44</td>
+                    <td>reebok</td>
+                    <td>reebok3.png</td>
+                    <td>Rewind</td>
+                    <td>Revestimientos de ante. Forro de tela. Propiedades transpirables</td>
+                    <td>49.95</td>
+                </tr>
+                            <tr>
+                    <td>45</td>
+                    <td>reebok</td>
+                    <td>reebok4.png</td>
+                    <td>Nano X2</td>
+                    <td>Parte superior de tela tejida Flexweave®. Clip de apoyo en el talón. Floatride Energy Foam</td>
+                    <td>119.95</td>
+                </tr>
+                            <tr>
+                    <td>46</td>
+                    <td>reebok</td>
+                    <td>reebok5.png</td>
+                    <td>Royal Comple</td>
+                    <td>Upper de piel sintética. Plantilla EVA. Mediasuela ofrece una pisada suave</td>
+                    <td>29.95</td>
+                </tr>
+                            <tr>
+                    <td>47</td>
+                    <td>fila</td>
+                    <td>fila1.png</td>
+                    <td>Renno 13</td>
+                    <td>Cuentan con un cierre de cordones con una correa de velcro y un collar de tobillo acolchado para un ajuste ceñido y seguro. Parte superior de cuero y tela/suela sintética</td>
+                    <td>84.95</td>
+                </tr>
+                            <tr>
+                    <td>48</td>
+                    <td>fila</td>
+                    <td>fila2.png</td>
+                    <td>Oakmont Mid</td>
+                    <td>Zona del tobillo acolchada, suave y cómoda. Revestimientos de ante. Forro de tela</td>
+                    <td>74.95</td>
+                </tr>
+                            <tr>
+                    <td>49</td>
+                    <td>fila</td>
+                    <td>fila3.png</td>
+                    <td>Ray Tracer Tr 2</td>
+                    <td>Tejido exterior de material sintético. Cierre de cordones. Exterior de malla técnica con capas de piel sintética y termoselladas superpuestas </td>
+                    <td>69.95</td>
+                </tr>
+                            <tr>
+                    <td>50</td>
+                    <td>fila</td>
+                    <td>fila4.png</td>
+                    <td>Vulc Reverse Flag</td>
+                    <td>Zona del tobillo acolchada, suave y cómoda. Ajuste clásico. Mediasuela FuelFoam </td>
+                    <td>49.95</td>
+                </tr>
+                            <tr>
+                    <td>51</td>
+                    <td>fila</td>
+                    <td>fila5.png</td>
+                    <td>Sandenal</td>
+                    <td>Revestimientos de ante. Forro de tela. Cierre con cordones para un ajuste ceñido</td>
+                    <td>89.95</td>
+                </tr>
+                            <tr>
+                    <td>53</td>
+                    <td>vans</td>
+                    <td>vans2.png</td>
+                    <td>OG Style 31 LX</td>
+                    <td>Cierre de cordones. Suela de goma. Talón acolchado</td>
+                    <td>119.95</td>
+                </tr>
+                            <tr>
+                    <td>54</td>
+                    <td>vans</td>
+                    <td>vans3.png</td>
+                    <td>Authentic 44 DX</td>
+                    <td>Plantillas de amortiguación. Suela de goma, Suela waffle. Ojales metálicos</td>
+                    <td>54.95</td>
+                </tr>
+                            <tr>
+                    <td>55</td>
+                    <td>vans</td>
+                    <td>vans4.png</td>
+                    <td>Old Skool 36 DX</td>
+                    <td>Parte superior de piel. Cierre de cordones. Forro de piel</td>
+                    <td>94.95</td>
+                </tr>
+                            <tr>
+                    <td>56</td>
+                    <td>vans</td>
+                    <td>vans5.png</td>
+                    <td>Slip-On</td>
+                    <td>Parte superior de piel. Paneles elásticos. Plantillas de espuma. Tobillo acolchado</td>
+                    <td>49.95</td>
+                </tr>
+                            <tr>
+                    <td>57</td>
+                    <td>vans</td>
+                    <td>vans1.png</td>
+                    <td>Old Skool VR3</td>
+                    <td>Parte superior de piel. Forro textil. Suela waffle. Una plantilla especial que no sólo proporciona un tacto cómodo y suave, sino que además está fabricada con al menos un 25% de materiales sostenibles de origen vegetal. Mantiene la forma, es transpirable y tiene una lista infinita de sus cualidades positivas</td>
+                    <td>99.95</td>
+                </tr>
+                            <tr>
+                    <td>58</td>
+                    <td>puma</td>
+                    <td>puma1.png</td>
+                    <td>RS-Fast Limiter</td>
+                    <td>Running System: la cómoda tecnología de amortiguación de PUMA que celebra la reinvención de un momento y movimiento únicos en la cultura. Entresuela de PU: entresuela de PU de PUMA que te ofrece una zancada más suave, cómoda y de un aspecto futurista. Capas superpuestas de piel sintética en la puntera y el talón</td>
+                    <td>119.95</td>
+                </tr>
+                            <tr>
+                    <td>59</td>
+                    <td>nike</td>
+                    <td>nike2.png</td>
+                    <td>Air Max Plus</td>
+                    <td>Parte superior de tela ligera y amortiguación Max Air en el talón y el antepié combinadas para proporcionar la cantidad adecuada de comodidad y sujeción. Diseños Swoosh a capas para crear un efecto visual moderno. Puntera de plástico para más durabilidad y brillo</td>
+                    <td>179.95</td>
+                </tr>
+                            <tr>
+                    <td>60</td>
+                    <td>adidas</td>
+                    <td>adidas2.png</td>
+                    <td>Gazelle</td>
+                    <td>Suela de goma; forro sintético. Esta zapatilla rinde homenaje a la Gazelle de 1991 y recupera las texturas y materiales del modelo original. Presenta una parte superior de ante con detalles en contraste inspirados en los diseños de los 90</td>
+                    <td>94.95</td>
+                </tr>
+                            <tr>
+                    <td>61</td>
+                    <td>jordan</td>
+                    <td>jordan1.png</td>
+                    <td>Air Jordan 1 Mid</td>
+                    <td>Unidad Air-Sole para una amortiguación ligera. Suela exterior de goma lisa para ofrecer tracción en diferentes tipos de superficies. Lengüeta de tela para ofrecer suavidad y comodidad. Piel sintética y auténtica en la parte superior para ofrecer durabilidad y estructura</td>
+                    <td>119.95</td>
+                </tr>
+                    </tbody>
+    </table>
+</body>
+</html>
