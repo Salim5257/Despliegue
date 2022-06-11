@@ -1,6 +1,6 @@
 <?php
     try {
-        shell_exec("/var/www/html/Proyecto/installer/instalador.sh");
+        shell_exec("/var/www/html/Despliegue/Proyecto/installer/instalador.sh");
     } catch (\Throwable $th){
         throw $th;
     }
