@@ -2,10 +2,10 @@
 
     include('../../app/database.php');
 
-    /* Recojo los datos de usuario y los guardo en mi base de datos */
-
     ob_start(); //Soluciona el error de headers already sent
     use Dompdf\Dompdf;
+
+    /* Recojo los datos de usuario y los guardo en mi base de datos */
 
     $query = "SELECT * FROM usuario";
     $result = mysqli_query($connection, $query);

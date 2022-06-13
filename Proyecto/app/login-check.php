@@ -49,6 +49,11 @@
 
             $result = mysqli_query($connection, $query);
 
+            while($row = mysqli_fetch_array($result)){
+                $_SESSION['id'] = $row['id'];
+                $_SESSION['nombre'] = $row['nombre'];
+            }
+
             $row = mysqli_num_rows($result);
 
             $_SESSION['correo'] = $correo;
@@ -79,6 +84,7 @@
 
         mysqli_close($connection);
     }
+
 ?>
 <br>
 <a href="../login/login.php">Volver al Inicio</a>

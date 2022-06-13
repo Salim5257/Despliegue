@@ -2,13 +2,8 @@
 
     include('../../app/database.php');
 
-    /* Lista de cabeceras que me permiten crear un pdf para la lista de contactos */
-
-    header("Content-type: application/vnd.ms-excel");
-    header("Content-Disposition: attachment;filename='contact-print-pdf.xls'");
-    header("Expires: 0");
-    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    header("Pragma: public");
+    ob_start(); //Soluciona el error de headers already sent
+    use Dompdf\Dompdf;
 
     /* Recojo los datos de contacto y los guardo en mi base de datos */
 
@@ -56,3 +51,13 @@
     </table>
 </body>
 </html>
+
+<?php
+    require("pdf/dompdf/autoload.inc.php");
+    $dompdf = new DOMPDF();
+    $dompdf->loadHtml(ob_get_clean());
+    $dompdf->render();
+    $pdf = $dompdf->output();
+    $filename = 'contact-print-pdf.pdf';
+    $dompdf->stream($filename, array("Attachment" => 0));
+?>  

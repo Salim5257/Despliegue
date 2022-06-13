@@ -59,7 +59,7 @@
 
     <!-- Lista de novedades -->
 
-    <h1><b>Lista de novedades</b> <a href="print/news-print-excel.php" id="print-excel-admin">Excel <i class="fa-solid fa-file-excel"></i></a> <a href="print/user-print-pdf.php" id="print-pdf-admin">PDF <i class="fa-solid fa-file-pdf"></i></a></h1><br>
+    <h1><b>Lista de novedades</b> <a href="print/news-print-excel.php" id="print-excel-admin">Excel <i class="fa-solid fa-file-excel"></i></a> <a href="print/news-print-pdf.php" id="print-pdf-admin">PDF <i class="fa-solid fa-file-pdf"></i></a></h1><br>
 
     <div id="scroll">
       <table class="table border border-primary" id="tabla-admin">

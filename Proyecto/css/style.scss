@@ -486,6 +486,7 @@ header{
                 width: 10rem;
                 border-radius: 50% 50% 50% 0%;
                 border: .5rem solid $red;
+                background-color: black;
             }
         }
     }
@@ -514,6 +515,67 @@ header{
             color: $red;
             margin: .5rem 2rem;
             font-size: 2.5rem;
+        }
+    }
+}
+
+#add-review{
+    height: 83.8vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,255,.4),rgba(0,0,255,.4)), url(../images/add-review-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem 0;
+    text-align: center;
+
+    h1{
+        font-size: 4rem;
+        color: #fff;
+    }
+    p{
+        font-size: 2rem;
+        color: #f9f9f9;
+    }
+    input[type="text"]{
+        outline: none;
+        border: none;
+        background: #333;
+        color: #fff;
+        height: 4rem;
+        width: 40rem;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+
+        &::placeholder{
+            color: #ccc;
+        }
+    }
+
+    textarea{
+        outline: none;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        resize: none;
+
+        &::placeholder{
+            color: #ccc;
+        }
+    }
+
+    input[type="submit"]{
+        @include button();
+        margin-top: 2rem;
+        background: $red;
+        color: #000;
+
+        &:hover{
+            background: $blue;
         }
     }
 }

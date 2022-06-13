@@ -84,7 +84,6 @@ $(document).ready(function() {
                             </td>
                             <td>${task.reseña_comentario}</td>
                             <td>${task.reseña_nombre}</td>
-                            <td>${task.reseña_imagen}</td>
                             <td>
                                 <input type="button" class="taskreview-delete btn btn-danger" style="font-size: 2rem;" value="Borrar">
                             </td>
@@ -116,7 +115,6 @@ $(document).ready(function() {
             const task = JSON.parse(response);
             $('#reseña_comentario').val(task.reseña_comentario);
             $('#reseña_nombre').val(task.reseña_nombre);
-            $('#reseña_imagen').val(task.reseña_imagen);
             $('#task-reviewId').val(task.id);
             edit = true;
         })

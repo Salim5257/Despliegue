@@ -12018,7 +12018,7 @@ fieldset:disabled .btn {
       grid-template-columns: 550px 550px;
 }
 
-#editar-prod, #editar-review {
+#editar-prod {
   margin-left: 5rem;
 }
 

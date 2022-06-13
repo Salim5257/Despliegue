@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-06-2022 a las 04:45:35
+-- Tiempo de generación: 13-06-2022 a las 01:10:37
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -36,14 +36,14 @@ CREATE TABLE IF NOT EXISTS `contacto` (
   `mensaje` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_usuario` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `contacto`
 --
 
 INSERT INTO `contacto` (`id`, `id_usuario`, `correo`, `mensaje`) VALUES
-(32, 8, 'salim@gmail.com', 'Mensaje de prueba numero 1');
+(30, 34, 'ples@gmail.com', 'fawfwa');
 
 -- --------------------------------------------------------
 
@@ -110,20 +110,19 @@ INSERT INTO `producto` (`id`, `producto_marca`, `producto_imagen`, `producto_nom
 
 CREATE TABLE IF NOT EXISTS `reseña` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_usuario` int(11) NOT NULL,
   `reseña_comentario` varchar(255) NOT NULL,
   `reseña_nombre` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_usuario_reseña` (`id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
+  `reseña_imagen` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `reseña`
 --
 
-INSERT INTO `reseña` (`id`, `id_usuario`, `reseña_comentario`, `reseña_nombre`) VALUES
-(30, 8, 'Muy contento con el resultado y el acabado de los productos que he pedido. Además de la rapidez de la entrega', 'Salim'),
-(31, 5, 'Sin duda volveré a pedir de esta página. Me ha impresionado la profesionalidad con la que trabajan en Foot Base', 'Natividad');
+INSERT INTO `reseña` (`id`, `reseña_comentario`, `reseña_nombre`, `reseña_imagen`) VALUES
+(1, 'Hace una semana pedí un par de zapatillas que me gustaron, a mi sorpresa            los recibí muy pronto y además me están perfectas.', 'Ferrán', 'pic1.png'),
+(6, 'Hace una semana pedí un par de zapatillas que me gustaron, a mi sorpresa            los recibí muy pronto y además me están perfectas.', 'Yusef', 'pic2.png');
 
 -- --------------------------------------------------------
 
@@ -149,7 +148,11 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `telefono`, `correo`, `contrasena`) VALUES
 (5, 'Natividad', 'Barbaro', '42134142T', '34-343433311', 'santiago@hotmail.com', 'aquesisisisi'),
 (8, 'Salim', 'Ahmed', '45318122A', '34-622668888', 'salim@gmail.com', 'salim123'),
-(30, 'prueba', 'prueba', '45383838Y', '34-611611611', 'prueba@gmail.com', 'prueba123');
+(30, 'prueba', 'prueba', '45383838Y', '34-611611611', 'prueba@gmail.com', 'prueba123'),
+(31, 'Salim', 'prueba', '34565666T', '34-666678788', 'salim123@gmail.com', 'salim12345'),
+(32, 'peter', 'griffin', '45312823Y', '34-366677887', 'peter@gmail.com', 'peter123'),
+(33, 'pablito', 'clavo', '45318679Y', '34-777777755', 'pablitoclavito@gmail.com', 'pablito213'),
+(34, 'mort', 'ples', '34333333Y', '34-666666666', 'ples@gmail.com', 'ples123');
 
 --
 -- Restricciones para tablas volcadas
@@ -159,13 +162,7 @@ INSERT INTO `usuario` (`id`, `nombre`, `apellido`, `dni`, `telefono`, `correo`, 
 -- Filtros para la tabla `contacto`
 --
 ALTER TABLE `contacto`
-  ADD CONSTRAINT `FK_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `reseña`
---
-ALTER TABLE `reseña`
-  ADD CONSTRAINT `FK_usuario_reseña` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `FK_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

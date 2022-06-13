@@ -7,11 +7,10 @@
     $id = $_POST['id'];
     $reseña_comentario = $_POST['reseña_comentario'];
     $reseña_nombre = $_POST['reseña_nombre'];
-    $reseña_imagen = $_POST['reseña_imagen'];
 
     /* Se actualizan según los datos que le queramos cambiar */
 
-    $query = "UPDATE reseña SET reseña_comentario = '$reseña_comentario', reseña_nombre = '$reseña_nombre', reseña_imagen = '$reseña_imagen' WHERE id = '$id'";
+    $query = "UPDATE reseña SET reseña_comentario = '$reseña_comentario', reseña_nombre = '$reseña_nombre' WHERE id = '$id'";
 
     $result = mysqli_query($connection, $query);
 

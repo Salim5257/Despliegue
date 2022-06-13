@@ -12528,6 +12528,7 @@ header .header-2 #user-session {
   width: 10rem;
   border-radius: 50% 50% 50% 0%;
   border: 0.5rem solid #EB4D4B;
+  background-color: black;
 }
 
 .review-slider .comment {
@@ -12555,6 +12556,108 @@ header .header-2 #user-session {
   color: #EB4D4B;
   margin: .5rem 2rem;
   font-size: 2.5rem;
+}
+
+#add-review {
+  height: 83.8vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0.4)), to(rgba(0, 0, 255, 0.4))), url(../images/add-review-bg.png) no-repeat;
+  background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 255, 0.4)), url(../images/add-review-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#add-review h1, #add-review .h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+#add-review p {
+  font-size: 2rem;
+  color: #f9f9f9;
+}
+
+#add-review input[type="text"] {
+  outline: none;
+  border: none;
+  background: #333;
+  color: #fff;
+  height: 4rem;
+  width: 40rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+#add-review input[type="text"]::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+#add-review input[type="text"]:-ms-input-placeholder {
+  color: #ccc;
+}
+
+#add-review input[type="text"]::-ms-input-placeholder {
+  color: #ccc;
+}
+
+#add-review input[type="text"]::placeholder {
+  color: #ccc;
+}
+
+#add-review textarea {
+  outline: none;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  resize: none;
+}
+
+#add-review textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+#add-review textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+
+#add-review textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+
+#add-review textarea::placeholder {
+  color: #ccc;
+}
+
+#add-review input[type="submit"] {
+  outline: none;
+  border: none;
+  height: 4rem;
+  width: 16rem;
+  background: #4834D4;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: .5rem 0;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  background: #EB4D4B;
+  color: #000;
+}
+
+#add-review input[type="submit"]:hover {
+  background: #EB4D4B;
+  letter-spacing: .1rem;
+}
+
+#add-review input[type="submit"]:hover {
+  background: #4834D4;
 }
 
 /* contact part */

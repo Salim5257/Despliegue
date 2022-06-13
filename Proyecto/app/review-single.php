@@ -16,7 +16,6 @@
         $json[] = array (
             'reseña_comentario' => $row['reseña_comentario'],
             'reseña_nombre' => $row['reseña_nombre'],
-            'reseña_imagen' => $row['reseña_imagen'],
             'id' => $row['id']
         );
     }

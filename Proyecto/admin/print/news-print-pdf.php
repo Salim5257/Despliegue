@@ -2,13 +2,8 @@
 
     include('../../app/database.php');
 
-    /* Lista de cabeceras que me permiten crear un pdf para la lista de novedades */
-
-    header("Content-type: application/vnd.ms-excel");
-    header("Content-Disposition: attachment;filename='news-print-pdf.xls'");
-    header("Expires: 0");
-    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    header("Pragma: public");
+    ob_start(); //Soluciona el error de headers already sent
+    use Dompdf\Dompdf;
 
     /* Recojo los datos de novedades y los guardo en mi base de datos */
 
@@ -65,3 +60,13 @@
     </table>
 </body>
 </html>
+
+<?php
+    require("pdf/dompdf/autoload.inc.php");
+    $dompdf = new DOMPDF();
+    $dompdf->loadHtml(ob_get_clean());
+    $dompdf->render();
+    $pdf = $dompdf->output();
+    $filename = 'news-print-pdf.pdf';
+    $dompdf->stream($filename, array("Attachment" => 0));
+?>  

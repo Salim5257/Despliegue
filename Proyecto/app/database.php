@@ -4,8 +4,8 @@
 
     $connection = mysqli_connect(
         'localhost',
-        'app',
-        '543210',
+        'debianDB',
+        'debianDB',
         'proyecto'
     );
 

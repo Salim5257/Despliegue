@@ -2,13 +2,8 @@
 
     include('../../app/database.php');
 
-    /* Lista de cabeceras que me permiten crear un pdf para la lista de reseñas */
-
-    header("Content-type: application/vnd.ms-excel");
-    header("Content-Disposition: attachment;filename='review-print-pdf.xls'");
-    header("Expires: 0");
-    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-    header("Pragma: public");
+    ob_start(); //Soluciona el error de headers already sent
+    use Dompdf\Dompdf;
 
     /* Recojo los datos de reseña y los guardo en mi base de datos */
 
@@ -24,7 +19,6 @@
         $json[] = array(
             'reseña_comentario' => $row['reseña_comentario'],
             'reseña_nombre' => $row['reseña_nombre'],
-            'reseña_imagen' => $row['reseña_imagen'],
             'id' => $row['id']
         );
     }
@@ -44,7 +38,6 @@
             <th style="background-color: blue; color: white;">Id</th>
             <th style="background-color: blue; color: white;">Comentario</th>
             <th style="background-color: blue; color: white;">Nombre</th>
-            <th style="background-color: blue; color: white;">Imagen</th>
         </tr>
         <tbody> 
             <?php foreach($json as $user){ ?>
@@ -52,10 +45,19 @@
                     <td><?php echo $user['id']; ?></td>
                     <td><?php echo $user['reseña_comentario']; ?></td>
                     <td><?php echo $user['reseña_nombre']; ?></td>
-                    <td><?php echo $user['reseña_imagen']; ?></td>
                 </tr>
             <?php } ?>
         </tbody>
     </table>
 </body>
 </html>
+
+<?php
+    require("pdf/dompdf/autoload.inc.php");
+    $dompdf = new DOMPDF();
+    $dompdf->loadHtml(ob_get_clean());
+    $dompdf->render();
+    $pdf = $dompdf->output();
+    $filename = 'review-print-pdf.pdf';
+    $dompdf->stream($filename, array("Attachment" => 0));
+?>  

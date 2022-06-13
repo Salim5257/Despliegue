@@ -59,7 +59,7 @@
 
     <!-- Lista de reseñas -->
 
-    <h1><b>Lista de reseñas</b> <a href="print/review-print-excel.php" id="print-excel-admin">Excel <i class="fa-solid fa-file-excel"></i></a> <a href="print/user-print-pdf.php" id="print-pdf-admin">PDF <i class="fa-solid fa-file-pdf"></i></a></h1><br>
+    <h1><b>Lista de reseñas</b> <a href="print/review-print-excel.php" id="print-excel-admin">Excel <i class="fa-solid fa-file-excel"></i></a> <a href="print/review-print-pdf.php" id="print-pdf-admin">PDF <i class="fa-solid fa-file-pdf"></i></a></h1><br>
 
     <div id="scroll">
       <table class="table border border-primary" id="tabla-admin">
@@ -68,7 +68,6 @@
               <td scope="col" class="text-white"><b>Id</b></td>
               <td scope="col" class="text-white"><b>Comentario</b></td>
               <td scope="col" class="text-white"><b>Nombre</b></td>
-              <td scope="col" class="text-white"><b>Imagen</b></td>
               <td scope="col" class="bg-danger text-white"><b>Eliminar</b></td>
             </tr>
             <tbody id="tasks-review"></tbody>
@@ -80,44 +79,24 @@
 
     <div class="panel">
 
-      <!-- Crear reseña -->
-
-      <div id="hr-vertical2">
-        <h1><b>Crear reseña</b></h1><br>
-
-        <form action="../app/review-add.php" method="post" id="form-admin">
-          <label for="comentario">Comentario:</label>
-          <input type="text" name="reseña_comentario" id=""><br>
-
-          <label for="nombre">Nombre:</label>
-          <input type="text" name="reseña_nombre" id=""><br>
-
-          <label for="imagen">Imagen:</label>
-          <input type="file" name="reseña_imagen" id=""><br>
-
-          <input type="submit" name="enviar" value="Enviar">
-        </form>
-      </div>
-
       <!-- Editar reseña -->
 
-      <div id="editar-review">
-        <h1><b>Editar reseña</b></h1>
-          
-        <form action="../app/review-edit.php" method="post" id="form-admin">
-          <input type="hidden" name="id" id="task-reviewId"><br>
+      <div id="hr-vertical1">
+        <div id="editar-review">
+          <h1><b>Editar reseña</b></h1>
+            
+          <form action="../app/review-edit.php" method="post" id="form-admin">
+            <input type="hidden" name="id" id="task-reviewId"><br>
 
-          <label for="marca">Comentario:</label>
-          <input type="text" name="reseña_comentario" id="reseña_comentario"><br>
+            <label for="marca">Comentario:</label>
+            <input type="text" name="reseña_comentario" id="reseña_comentario"><br>
 
-          <label for="imagen">Nombre:</label>
-          <input type="text" name="reseña_nombre" id="reseña_nombre"><br>
+            <label for="imagen">Nombre:</label>
+            <input type="text" name="reseña_nombre" id="reseña_nombre"><br>
 
-          <label for="nombre">Imagen:</label>
-          <input type="text" name="reseña_imagen" id="reseña_imagen"><br>
-
-          <input type="submit" name="editar" value="Actualizar">
-        </form>
+            <input type="submit" name="editar" value="Actualizar">
+          </form>
+        </div>
       </div>
 
     </div>

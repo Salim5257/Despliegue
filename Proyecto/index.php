@@ -68,6 +68,7 @@
         <?php
           /* En caso de que la sesión sea de un usuario registrado, se mostrarán los botones de favoritos, carrito y el usuario junto a un botón para cerrar sesión */
           if(isset($_SESSION['correo'])){
+            echo "<a href='app/review.php' class='fas fa-star' aria-label='review'></a>";
             echo "<a href='#' class='fas fa-heart' aria-label='like button'></a><a href='#' class='fas fa-shopping-cart' aria-label='cart button'></a>";
             echo "<a href='#' id='user-session'> <i class='fas fa-user'></i> ". $_SESSION['correo'] ."</a>";
             echo "<a href='login/close_session.php' aria-label='close-session button' class='fa-solid fa-door-open' style='color: #EB4D4B;'></a>";
@@ -306,7 +307,7 @@
               </div>
       
               <div class="image">
-                  <img src="images/<?php echo $row['reseña_imagen']; ?>" alt="">
+                  <img src="images/user.png" alt="">
               </div>
             </div>
         <?php
@@ -324,7 +325,7 @@
                 </div>
         
                 <div class="image">
-                    <img src="images/<?php echo $row['reseña_imagen']; ?>" alt="">
+                  <img src="images/user.png" alt="">
                 </div>
               </div>
                 <?php

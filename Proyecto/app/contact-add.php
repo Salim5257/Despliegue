@@ -13,6 +13,7 @@
         $correoS = $_SESSION['correo'];
         $correo = $_POST['correo'];
         $mensaje = $_POST['mensaje'];
+        $id_usuario = $_SESSION['id'];
 
         /* Si hay un correo y el mensaje se procederá a crear el contacto */
 
@@ -25,8 +26,8 @@
                 $result = mysqli_query($connection, $query);
 
                 if(mysqli_num_rows($result) > 0){
-                    $query = "INSERT INTO contacto(correo, mensaje) 
-                    VALUES ('$correo', '$mensaje')";
+                    $query = "INSERT INTO contacto(id_usuario, correo, mensaje) 
+                    VALUES ('$id_usuario', '$correo', '$mensaje')";
                     $result = mysqli_query($connection, $query);
                         
                     if($result) {
