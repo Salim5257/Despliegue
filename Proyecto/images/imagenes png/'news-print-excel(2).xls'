@@ -1,0 +1,64 @@
+
+<!-- Le doy forma de tabla al excel -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <table>
+        <tr>
+            <th style="background-color: blue; color: white;">Id</th>
+            <th style="background-color: blue; color: white;">Marca</th>
+            <th style="background-color: blue; color: white;">Imagen</th>
+            <th style="background-color: blue; color: white;">Nombre</th>
+            <th style="background-color: blue; color: white;">Descripción</th>
+            <th style="background-color: blue; color: white;">Precio</th>
+        </tr>
+        <tbody> 
+                            <tr>
+                    <td>61</td>
+                    <td>jordan</td>
+                    <td>jordan1.png</td>
+                    <td>Air Jordan 1 Mid</td>
+                    <td>Unidad Air-Sole para una amortiguación ligera. Suela exterior de goma lisa para ofrecer tracción en diferentes tipos de superficies. Lengüeta de tela para ofrecer suavidad y comodidad. Piel sintética y auténtica en la parte superior para ofrecer durabilidad y estructura</td>
+                    <td>119.95</td>
+                </tr>
+                            <tr>
+                    <td>60</td>
+                    <td>adidas</td>
+                    <td>adidas2.png</td>
+                    <td>Gazelle</td>
+                    <td>Suela de goma; forro sintético. Esta zapatilla rinde homenaje a la Gazelle de 1991 y recupera las texturas y materiales del modelo original. Presenta una parte superior de ante con detalles en contraste inspirados en los diseños de los 90</td>
+                    <td>94.95</td>
+                </tr>
+                            <tr>
+                    <td>59</td>
+                    <td>nike</td>
+                    <td>nike2.png</td>
+                    <td>Air Max Plus</td>
+                    <td>Parte superior de tela ligera y amortiguación Max Air en el talón y el antepié combinadas para proporcionar la cantidad adecuada de comodidad y sujeción. Diseños Swoosh a capas para crear un efecto visual moderno. Puntera de plástico para más durabilidad y brillo</td>
+                    <td>179.95</td>
+                </tr>
+                            <tr>
+                    <td>58</td>
+                    <td>puma</td>
+                    <td>puma1.png</td>
+                    <td>RS-Fast Limiter</td>
+                    <td>Running System: la cómoda tecnología de amortiguación de PUMA que celebra la reinvención de un momento y movimiento únicos en la cultura. Entresuela de PU: entresuela de PU de PUMA que te ofrece una zancada más suave, cómoda y de un aspecto futurista. Capas superpuestas de piel sintética en la puntera y el talón</td>
+                    <td>119.95</td>
+                </tr>
+                            <tr>
+                    <td>57</td>
+                    <td>vans</td>
+                    <td>vans1.png</td>
+                    <td>Old Skool VR3</td>
+                    <td>Parte superior de piel. Forro textil. Suela waffle. Una plantilla especial que no sólo proporciona un tacto cómodo y suave, sino que además está fabricada con al menos un 25% de materiales sostenibles de origen vegetal. Mantiene la forma, es transpirable y tiene una lista infinita de sus cualidades positivas</td>
+                    <td>99.95</td>
+                </tr>
+                    </tbody>
+    </table>
+</body>
+</html>
