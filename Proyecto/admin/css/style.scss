@@ -1,0 +1,67 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+#border-admin{
+    border: 3px solid #2980b9;
+    margin: 4rem; 
+    background-color: rgba(206, 204, 204, 0.418);
+}
+
+#print-excel-admin{
+    float: right; 
+    font-size: 2rem;
+    color: green;
+    font-weight: normal;
+}
+
+#print-pdf-admin{
+    float: right; 
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: red;
+    font-weight: normal;
+}
+
+#tabla-admin{
+    font-size: 2rem; 
+    max-width: 1820px;
+
+    #tr-admin{
+        background-color: #2980b9;
+    }
+}
+
+#hr-vertical1{
+    border-right: 1px solid black; 
+    max-width: 400px;
+    margin-left: 1rem;
+}
+
+#hr-vertical2{
+    border-right: 1px solid black; 
+    max-width: 600px;
+    margin-left: 1rem;
+}
+
+#form-admin{
+    font-size: 1.75rem;
+}
+
+.panel{
+    display: grid;
+    grid-template-columns: 550px 550px;
+}
+
+#editar-prod{
+    margin-left: 5rem;
+}
+
+#scroll{
+    height: 30rem; 
+    overflow-y: scroll;
+}
