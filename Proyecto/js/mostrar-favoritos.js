@@ -48,6 +48,7 @@ $(document).ready(function () {
             let element = $(this)[0].parentElement.parentElement;
             let id = $(element).attr('task-prodId');
             $.post('favs-delete.php', {id}, function (response) {
+                location.reload();
                 verFavoritos(response);
             });
         }
